@@ -1,1 +1,1 @@
-# gitopsatscale
+# GITOPS AT SCALE
