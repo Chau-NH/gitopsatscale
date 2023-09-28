@@ -19,7 +19,7 @@ spec:
    
   # Destination cluster and namespace to deploy the application
   destination:
-    server: https://D85933C1B5B538CCBDD24CF74BC8F76F.gr7.us-east-1.eks.amazonaws.com
+    server: https://D8D8B383CEB251B1D2488C78AAB7E991.gr7.us-east-1.eks.amazonaws.com
     namespace: backend
 
   # Sync policy
