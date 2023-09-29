@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: billing-application-set
+  name: nhc-application-set
   namespace: argocd
 spec:
   generators:
@@ -13,7 +13,7 @@ spec:
       - namespace: staging
   template:      
     metadata:
-      name: '{{namespace}}-billing'
+      name: '{{namespace}}-nhc'
     spec:
       # The project the application belongs to.
       project: default
@@ -26,7 +26,7 @@ spec:
       
       # Destination cluster and namespace to deploy the application
       destination:
-        server: https://D85933C1B5B538CCBDD24CF74BC8F76F.gr7.us-east-1.eks.amazonaws.com
+        server: https://CAD1E94AB2F9A14DAF1E0DC4B654F58E.gr7.us-east-1.eks.amazonaws.com
         namespace: '{{namespace}}'
 
       # Sync policy
